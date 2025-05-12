@@ -1,3 +1,4 @@
+import RegisterForm from "@/components/RegisterForm";
 import Iridescence from "../../components/Iridescence";
 
 export default async function Page() {
@@ -13,20 +14,7 @@ export default async function Page() {
           />
         </div>
         <div className="h-auto flex flex-col justify-center p-10 w-auto">
-          <div className="w-full space-y-4">
-            <h1 className="text-2xl font-bold">Login</h1>
-            <input
-              type="text"
-              placeholder="User Name"
-              className="input w-full"
-            />
-            <input
-              type="text"
-              placeholder="Password"
-              className="input w-full"
-            />
-            <button className="btn">Login</button>
-          </div>
+          <RegisterForm />
         </div>
       </div>
     </>
